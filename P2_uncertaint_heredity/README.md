@@ -5,6 +5,8 @@ Gene testing can be expensive, so while it is easy to determine if a child has h
 
 Three data sets are also included. Note that in all sets, every person has either two known or two unknown parents, and we are only dealing with two generations of a family.
 
+The code has been thouroughly tested using check50, and is confirmed to work for families with multiple children and for families with up to three generation and regardless of prior knowledge of gene count or trait in family. 
+
 ## Bayesian Network
 
 The number of damaged genes (gene count) is a hidden state that can be observed via a person possessing the trait hearing loss or not. Each person can have 0, 1, or 2 damaged genes and always recieves one gene from each parent. However, there is a small probability that a gene passed down by a parent will mutate (damaged to undamged or vice-versa). We have established data on the probability distributions in the general population of having 0, 1, or 2 damaged genes and the probability of experiencing hearing loss dependent on the person's gene count.
